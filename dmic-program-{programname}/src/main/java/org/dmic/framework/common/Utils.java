@@ -3,6 +3,7 @@ package org.dmic.framework.common;
 import java.util.Collection;
 import org.apache.commons.io.IOUtils;
 import java.nio.charset.StandardCharsets;
+import java.io.IOException;
 
 public class Utils {
     public static boolean isNullOrEmpty(String string) {
