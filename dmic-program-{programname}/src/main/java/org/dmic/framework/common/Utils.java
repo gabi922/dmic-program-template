@@ -4,6 +4,8 @@ import java.util.Collection;
 import org.apache.commons.io.IOUtils;
 import java.nio.charset.StandardCharsets;
 import java.io.IOException;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Utils {
     public static boolean isNullOrEmpty(String string) {
@@ -19,5 +21,12 @@ public class Utils {
         ConfigParser<T> configParser = new ConfigParser<>(tClass);
         String parameters = IOUtils.toString(Utils.class.getResourceAsStream(location), StandardCharsets.UTF_8);
         return configParser.parseString(parameters);
+    }
+
+    public static List<Class<?>> getTupleParameterTypes(List<String> tupleParametersNames) {
+        List<Class<?>> tupleParametersTypes = new ArrayList<>();
+        for (String fieldType: tupleParametersNames) {
+            tupleParametersTypes.add(Class.forName(fieldType));
+        }
     }
 }
