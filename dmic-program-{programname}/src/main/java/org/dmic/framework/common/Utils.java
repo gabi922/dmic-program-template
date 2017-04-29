@@ -23,10 +23,11 @@ public class Utils {
         return configParser.parseString(parameters);
     }
 
-    public static List<Class<?>> getTupleParameterTypes(List<String> tupleParametersNames) {
+    public static List<Class<?>> getTupleParameterTypes(List<String> tupleParametersNames) throws ClassNotFoundException {
         List<Class<?>> tupleParametersTypes = new ArrayList<>();
         for (String fieldType: tupleParametersNames) {
             tupleParametersTypes.add(Class.forName(fieldType));
         }
+        return tupleParametersTypes;
     }
 }
