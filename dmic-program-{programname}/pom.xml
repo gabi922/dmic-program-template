@@ -114,31 +114,31 @@
 					<groupId>org.apache.flink</groupId>
 					<artifactId>flink-java</artifactId>
 					<version>${flink.version}</version>
-					<scope>compile</scope>
+					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>org.apache.flink</groupId>
 					<artifactId>flink-streaming-java_2.10</artifactId>
 					<version>${flink.version}</version>
-					<scope>compile</scope>
+					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>org.apache.flink</groupId>
 					<artifactId>flink-clients_2.10</artifactId>
 					<version>${flink.version}</version>
-					<scope>compile</scope>
+					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>org.slf4j</groupId>
 					<artifactId>slf4j-log4j12</artifactId>
 					<version>${slf4j.version}</version>
-					<scope>compile</scope>
+					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>log4j</groupId>
 					<artifactId>log4j</artifactId>
 					<version>${log4j.version}</version>
-					<scope>compile</scope>
+					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>org.apache.flink</groupId>
