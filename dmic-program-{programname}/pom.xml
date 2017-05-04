@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>org.dmic.program.{programname}</groupId>
-	<artifactId>dmic-{programname}</artifactId>
+	<artifactId>dmic-program-{programname}</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
